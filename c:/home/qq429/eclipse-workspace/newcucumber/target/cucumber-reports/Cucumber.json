@@ -1,0 +1,159 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Login Functionality with valid credentials",
+        "description": "",
+        "id": "login-cucumber;login-functionality-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6408579199,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the Learnwise Login Page",
+            "match": {
+              "location": "stepdefinition.userIsOnTheLearnwiseLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 443836799,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should enter valid \"admin@admin.com\" and \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@admin.com\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 46
+                }
+              ],
+              "location": "stepdefinition.userShouldEnterValidAnd(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 291580894,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should select Login Button",
+            "match": {
+              "location": "stepdefinition.userShouldSelectLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6268433205,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify success message",
+            "match": {
+              "location": "stepdefinition.userShouldVerifySuccessMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Login with invalid credentials",
+        "description": "",
+        "id": "login-cucumber;login-with-invalid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6846256766,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User is on the Learnwise Login Page",
+            "match": {
+              "location": "stepdefinition.userIsOnTheLearnwiseLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 466029813,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should enter invalid \"admin@admin.com\" and \"admi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@admin.com\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"admi\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinition.userShouldEnterInvalidAnd(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 277609706,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should select Login Button",
+            "match": {
+              "location": "stepdefinition.userShouldSelectLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3372800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user should verify unsuccessful message",
+            "match": {
+              "location": "stepdefinition.userShouldVerifyUnsuccessfulMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SanityTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login cucumber",
+    "description": "",
+    "id": "login-cucumber",
+    "keyword": "Feature",
+    "uri": "src/test/resources/login.feature",
+    "tags": []
+  }
+]
